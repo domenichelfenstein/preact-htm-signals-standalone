@@ -42,6 +42,7 @@ import {
   useSignal,
   signal,
 } from "@preact/signals";
+import register from "preact-custom-element";
 
 const html = htm.bind(h);
 
@@ -72,4 +73,5 @@ export {
   useComputed,
   useSignal,
   signal,
+  register,
 };

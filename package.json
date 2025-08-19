@@ -3,11 +3,9 @@
   "version": "0.0.16",
   "description": "A single, standalone version of Preact, HTM and Preact Signals. No external dependencies, just one single file.",
   "type": "module",
-  "main": "dist/standalone.umd.js",
   "module": "dist/standalone.js",
-  "umd:main": "dist/standalone.umd.js",
   "scripts": {
-    "bundle": "microbundle index.js -o ./dist/standalone.js -f es,umd --no-sourcemap --target web"
+    "bundle": "microbundle index.js -o ./dist/standalone.js -f es --no-sourcemap --target web"
   },
   "repository": {
     "type": "git",
@@ -39,9 +37,10 @@
     "hyperscript"
   ],
   "devDependencies": {
-    "@preact/signals": "^1.2.2",
-    "htm": "3.1.1",
     "microbundle": "^0.15.1",
-    "preact": "^10.19.3"
+    "preact": "10.27.1",
+    "htm": "3.1.1",
+    "@preact/signals": "2.2.1",
+    "preact-custom-element": "4.3.0"
   }
 }
